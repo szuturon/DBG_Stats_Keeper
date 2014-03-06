@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20140228213729) do
   end
 
   create_table "games", :force => true do |t|
+    t.string   "flavor",     :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

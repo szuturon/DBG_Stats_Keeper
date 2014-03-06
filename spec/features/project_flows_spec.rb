@@ -1,9 +1,9 @@
 require 'spec_helper'
 
-describe "Heroes Listing" do
+describe "Heroes: " do
   describe "when visiting the index page" do
     it "should display all heroes" do
-			visit "/index"
+			visit "/heros/index"
 
 			expect(current_path).to eq(index_path)
 			expect(page).to have_content('Hero Stats')

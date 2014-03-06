@@ -1,20 +1,47 @@
 require 'spec_helper'
 
-describe "Heroes: " do
-  describe "when visiting the index page" do
-    it "should display all heroes" do
+describe "DCDB Heroes:" do
+  describe "When visiting the index page" do
+    it "should reach the heros index page" do
 			visit "/heros/index"
 
-			expect(current_path).to eq(index_path)
-			expect(page).to have_content('Hero Stats')
-			expect(page).to have_content('Aquaman')
-			expect(page).to have_content('Batman')
-			expect(page).to have_content('Cyborg')
-			expect(page).to have_content('Flash')
-			expect(page).to have_content('Green Lantern')
-			expect(page).to have_content('Martian Manhunter')
-			expect(page).to have_content('Superman')
-			expect(page).to have_content('Wonder Woman')      
+			expect(current_path).to eq(index_path)     
+    end
+
+    it "should display a header 'Hero Stats'" do
+    	expect(page).to have_content('Hero Stats')
+    end
+
+    it "should display 'Aquaman'" do
+    	expect(page).to have_content('Aquaman')
+    end
+
+    it "should display 'Batman'" do
+    	expect(page).to have_content('Batman')
+    end
+
+    it "should display 'Cyborg'" do
+    	expect(page).to have_content('Cyborg')
+    end
+
+    it "should display 'Flash'" do
+    	expect(page).to have_content('Flash')
+    end
+
+    it "should display 'Green Lantern'" do
+    	expect(page).to have_content('Green Lantern')
+    end
+
+    it "should display 'Martian Manhunter'" do
+    	expect(page).to have_content('Martian Manhunter')
+    end
+
+    it "should display 'Superman'" do
+    	expect(page).to have_content('Superman')
+    end
+
+    it "should display 'Wonder Woman" do
+    	expect(page).to have_content('Wonder Woman')
     end
   end
 end

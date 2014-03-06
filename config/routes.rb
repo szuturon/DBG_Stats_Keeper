@@ -1,4 +1,19 @@
 DBGStatsKeeper::Application.routes.draw do
+  get "heros/index"
+
+  get "heros/show"
+
+  get "heros/new"
+
+  get "heros/edit"
+
+  get "heros/create"
+
+  get "heros/update"
+
+  get "heros/destroy"
+  # resources :heros
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

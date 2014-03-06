@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe Hero do
+describe "heros/destroy.html.erb" do
   # pending "add some examples to (or delete) #{__FILE__}"
 end
